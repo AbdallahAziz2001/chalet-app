@@ -25,7 +25,7 @@ class ChaletPriceDiscountCodeFactory extends Factory
             }
         }
         while (true) {
-            $endAtDate = $this->faker->dateTimeBetween($startAtDate, '+1 month');
+            $endAtDate = $this->faker->dateTimeBetween($startAtDate, '+6 months');
             if ($endAtDate->format('H') != '00') {
                 $endAtDate = $endAtDate->format('Y-m-d H:i:s');
                 break;
